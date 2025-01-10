@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Application Form</title>
+    <style>
+        div {
+            border: 1px solid black;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 5px 5px 5px 5px  ;
+            margin: 5% auto;
+            padding: 20px;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        form {
+            text-align: left;
+        }
+        label, input {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+        
+        }
+        input[type="file"] {
+            margin-top: 10px;
+        }
+        input[type="reset"], input[type="submit"] {
+            width: auto;
+            padding: 10px 20px;
+            margin-right: 10px;
+        }
+        body{
+            color: crimson;
+            background-color:rgb(235, 190, 79);
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 style="text-align: center;">Job Application Form</h1>
+        <form>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="Enter 10-digit number">
+
+            <label for="position">Position Applied For:</label>
+            <input type="text" id="position" name="position" required>
+
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume" required>
+
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
