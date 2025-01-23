@@ -3,7 +3,6 @@ import s1 from '../assets/s1.jpg';
 import './Home.css'
 
 
-
 const Home = () => {
   return (
     <div class="home">
